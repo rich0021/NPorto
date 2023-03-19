@@ -7,7 +7,6 @@ function Circle() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const style = {
-    /* opacity, */
     x,
     y,
     transition: "0.5s, opacity 2s",

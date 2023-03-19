@@ -1,4 +1,6 @@
-import Circle from "./components/Circle";
+import Circle from "./components/Circle.jsx";
+import SliderLg from "./components/SliderLg.jsx";
+import SliderSm from "./components/SliderSm.jsx";
 import {
   motion,
   useScroll,
@@ -6,10 +8,11 @@ import {
   useAnimationControls,
 } from "framer-motion";
 import "./assets/css/dots.css";
+import "./assets/css/icon.css";
 
 function App() {
   const { scrollYProgress } = useScroll();
-  const transformY = useTransform(scrollYProgress, [0, 1], [0, 1500]);
+  const transformY = useTransform(scrollYProgress, [0, 1], [0, 1950]);
   const underlineControl = useAnimationControls();
   const spanV = {
     hidden: {
@@ -27,14 +30,14 @@ function App() {
   };
 
   return (
-    <div className="h-[2500px]">
+    <div className="h-[2200px] md:h-[2800px]">
       <Circle />
 
       {/* hi text */}
       <div
         className="z-50 relative w-max overflow-hidden flex"
         style={{
-          transform: "translateX(-50%) translateY(250px)",
+          transform: "translateX(-50%) translateY(200px)",
           left: "50%",
         }}
       >
@@ -59,7 +62,7 @@ function App() {
       {/* main content */}
       <div
         className="relative h-[1400px] w-[90%] md:w-[80%] flex"
-        style={{ transform: "translateX(-50%) translateY(275px)", left: "50%" }}
+        style={{ transform: "translateX(-50%) translateY(235px)", left: "50%" }}
       >
         {/* Line start */}
         <motion.div
@@ -75,10 +78,12 @@ function App() {
 
         {/* line */}
         <motion.div
-          className="line absolute w-[3.5px] sm:w-[4px] md:w-[5px] bg-white rounded-full"
+          className="line absolute w-[3.5px] sm:w-[4px] max-h-[1300px] lg:max-h-[2000px] md:w-[5px] bg-white rounded-full"
           style={{
             transform: "translateX(-50%)",
             left: "50%",
+            transition: "0.1s",
+            transitionTimingFunction: "ease-out",
             height: transformY,
           }}
         ></motion.div>
@@ -146,7 +151,8 @@ function App() {
         <div className="w-[50%] flex justify-end">
           <div className=" flex flex-col items-end translate-y-[750px] md:translate-y-[1000px] text-right h-max">
             <p className="font-bold font-nunito w-[90.5%] lg:w-[60%] text-sm sm:text-xl md:text-2xl lg:text-3xl">
-              i’m a student who trying to be a fullstack developer
+              i’m a student who trying to be a
+              <span className="text-[#cbaddf]"> fullstack</span> developer
             </p>
             <div
               id="dots"
@@ -161,7 +167,134 @@ function App() {
       </div>
 
       {/* slider */}
-      <div className="relative bg-green-500 translate-y-[255px] ">123</div>
+      <div className="relative md:translate-y-[500px]">
+        <SliderLg
+          slides={[
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+          ]}
+        />
+        <SliderSm
+          slides={[
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+            {
+              name: "p1",
+              desc: "d1",
+              tech: "t1",
+              img: "../src/assets/img/manwa.png",
+            },
+          ]}
+        />
+      </div>
+
+      {/* contact */}
+      <div className="relative translate-y-[100px] md:translate-y-[750px]">
+        <div className="social-buttons">
+          <a
+            href="https://www.instagram.com/kurabersayap002/"
+            className="social-button social-button--instagram"
+            aria-label="Instagram"
+            target="_blank"
+          >
+            <i className="fab fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/naufal-muttaqin/"
+            className="social-button social-button--linkedin"
+            aria-label="LinkedIn"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://wa.me/0895384412365"
+            className="social-button social-button--whatsapp"
+            aria-label="Whatsapp"
+            target="_blank"
+          >
+            <i className="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://github.com/rich0021"
+            className="social-button social-button--github"
+            aria-label="GitHub"
+            target="_blank"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://gitlab.com/rich0021"
+            className="social-button social-button--gitlab"
+            aria-label="Gitlab"
+            target="_blank"
+          >
+            <i className="fab fa-gitlab"></i>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
