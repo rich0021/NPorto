@@ -145,6 +145,24 @@ function App() {
               </svg>
             </motion.div>
           </div>
+          <div className="flex gap-x-2 font-bold translate-y-[800px] md:translate-y-[1500px] translate-x-[-300px] font-nunito text-3xl h-max">
+            <motion.span
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ...transition, duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              my
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ...transition, duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              work
+            </motion.span>
+          </div>
         </div>
 
         {/* right content */}
@@ -253,46 +271,62 @@ function App() {
       {/* contact */}
       <div className="relative translate-y-[100px] md:translate-y-[750px]">
         <div className="social-buttons">
-          <a
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ...transition, duration: 0.7 }}
+            viewport={{ once: true }}
             href="https://www.instagram.com/kurabersayap002/"
             className="social-button social-button--instagram"
             aria-label="Instagram"
             target="_blank"
           >
             <i className="fab fa-brands fa-instagram"></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ...transition, duration: 0.7, delay: 0.1 }}
             href="https://www.linkedin.com/in/naufal-muttaqin/"
             className="social-button social-button--linkedin"
             aria-label="LinkedIn"
             target="_blank"
           >
             <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ...transition, duration: 0.7, delay: 0.2 }}
             href="https://wa.me/0895384412365"
             className="social-button social-button--whatsapp"
             aria-label="Whatsapp"
             target="_blank"
           >
             <i className="fab fa-whatsapp"></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ...transition, duration: 0.7, delay: 0.3 }}
             href="https://github.com/rich0021"
             className="social-button social-button--github"
             aria-label="GitHub"
             target="_blank"
           >
             <i className="fab fa-github"></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ...transition, duration: 0.7, delay: 0.4 }}
             href="https://gitlab.com/rich0021"
             className="social-button social-button--gitlab"
             aria-label="Gitlab"
             target="_blank"
           >
             <i className="fab fa-gitlab"></i>
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
