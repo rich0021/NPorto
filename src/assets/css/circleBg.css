@@ -1,0 +1,25 @@
+#circleBg {
+  background: #7fa8d7;
+  background: -moz-linear-gradient(
+    left,
+    #7fa8d7 0%,
+    #8195cc 34%,
+    #8881bc 67%,
+    #906ba7 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #7fa8d7 0%,
+    #8195cc 34%,
+    #8881bc 67%,
+    #906ba7 100%
+  );
+  background: linear-gradient(
+    to right,
+    #7fa8d7 0%,
+    #8195cc 34%,
+    #8881bc 67%,
+    #906ba7 100%
+  );
+  filter: blur(100px) brightness(67%) contrast(110%);
+}
