@@ -287,6 +287,7 @@ function App() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.1 }}
+            viewport={{ once: true }}
             href="https://www.linkedin.com/in/naufal-muttaqin/"
             className="social-button social-button--linkedin"
             aria-label="LinkedIn"
@@ -298,6 +299,7 @@ function App() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.2 }}
+            viewport={{ once: true }}
             href="https://wa.me/0895384412365"
             className="social-button social-button--whatsapp"
             aria-label="Whatsapp"
@@ -309,6 +311,7 @@ function App() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.3 }}
+            viewport={{ once: true }}
             href="https://github.com/rich0021"
             className="social-button social-button--github"
             aria-label="GitHub"
@@ -320,6 +323,7 @@ function App() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.4 }}
+            viewport={{ once: true }}
             href="https://gitlab.com/rich0021"
             className="social-button social-button--gitlab"
             aria-label="Gitlab"
