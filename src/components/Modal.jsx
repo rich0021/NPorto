@@ -34,7 +34,7 @@ function Modal(prop) {
                   <hr className="mt-2" />
                   <div className="sm:flex sm:items-start mt-4">
                     <div className="bg-blue-500">
-                      <Swiper slidesPerView={3} spaceBetween={50}>
+                      <Swiper slidesPerView={3} spaceBetwegit en={50}>
                         {prop.modalInfo.imgDetail &&
                           prop.modalInfo.imgDetail.length > 0 &&
                           prop.modalInfo.imgDetail.map((item, index) => {
