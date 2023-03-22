@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Manwa",
+    "desc": "Aplikasi untuk membantu kesiswaan mengelola data absensi dan kedisiplinan",
+    "tech": "Nuxt, Laravel, Tailwind, Mysql",
+    "img": "/manwa.png",
+    "imgDetail": [
+      { "img": "/manwa.png", "name": "manwa1" },
+      { "img": "/manwa.png", "name": "manwa2" },
+      { "img": "/manwa.png", "name": "manwa3" },
+      { "img": "/manwa.png", "name": "manwa4" },
+      { "img": "/manwa.png", "name": "manwa5" }
+    ],
+    "link": ""
+  },
+
+  {
+    "name": "Kelontong.Id",
+    "desc": "Studi kasus PKL, Market place sederhana untuk menjual produk produk toko kelontong",
+    "tech": "Laravel, Mysql",
+    "img": "/kelontong.png",
+    "imgDetail": [
+      { "img": "/kelontong.png", "name": "manwa1" },
+      { "img": "/kelontong.png", "name": "manwa2" },
+      { "img": "/kelontong.png", "name": "manwa3" },
+      { "img": "/kelontong.png", "name": "manwa4" },
+      { "img": "/kelontong.png", "name": "manwa5" }
+    ],
+    "link": ""
+  }
+]

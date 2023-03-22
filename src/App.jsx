@@ -9,9 +9,12 @@ import {
 } from "framer-motion";
 import "./assets/css/dots.css";
 import "./assets/css/icon.css";
+import Modal from "./components/Modal.jsx";
+import { useState } from "react";
 
 function App() {
   const { scrollYProgress } = useScroll();
+  const [modalInfo, setModalInfo] = useState({ isOpen: false });
   const transformY = useTransform(scrollYProgress, [0, 1], [0, 1950]);
   const underlineControl = useAnimationControls();
   const spanV = {
@@ -29,13 +32,23 @@ function App() {
     duration: 1,
   };
 
-  return (
-    <div className="h-[2200px] md:h-[2800px]">
-      <Circle />
+  const modalOpen = (data) => {
+    setModalInfo({ ...data, isOpen: true });
+  };
 
+  const modalClose = () => {
+    setModalInfo((old) => {
+      return { ...old, isOpen: false };
+    });
+  };
+
+  return (
+    <div className="h-[2300px] md:h-[2800px]">
+      <Circle />
+      <Modal modalInfo={modalInfo} close={modalClose} />
       {/* hi text */}
       <div
-        className="z-50 relative w-max overflow-hidden flex"
+        className="z-5 relative w-max overflow-hidden flex"
         style={{
           transform: "translateX(-50%) translateY(200px)",
           left: "50%",
@@ -58,7 +71,6 @@ function App() {
           i
         </motion.span>
       </div>
-
       {/* main content */}
       <div
         className="relative h-[1400px] w-[90%] md:w-[80%] flex"
@@ -89,7 +101,8 @@ function App() {
         ></motion.div>
 
         {/* left content */}
-        <div className="w-[50%] flex justify-start">
+        <div className="w-[50%] flex items-start flex-col">
+          {/* identity */}
           <div className="translate-y-[350px] md:translate-y-[400px] h-max">
             <motion.p
               initial={{ opacity: 0, y: 50 }}
@@ -145,23 +158,19 @@ function App() {
               </svg>
             </motion.div>
           </div>
-          <div className="flex gap-x-2 font-bold translate-y-[800px] md:translate-y-[1500px] translate-x-[-300px] font-nunito text-3xl h-max">
-            <motion.span
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ...transition, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              my
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ...transition, duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              work
-            </motion.span>
+
+          {/* my work */}
+          <div className="font-bold translate-y-[1000px] flex justify-center md:translate-y-[1400px] w-full font-nunito text-xl md:text-3xl h-max">
+            <div className="relative flex items-center justify-center">
+              <p>my work</p>
+              <motion.div
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                transition={{ ...transition }}
+                viewport={{ once: true }}
+                className="w-[109%] h-[5px] origin-left rounded-full bg-[#8195cc] absolute"
+              ></motion.div>
+            </div>
           </div>
         </div>
 
@@ -183,93 +192,13 @@ function App() {
           </div>
         </div>
       </div>
-
       {/* slider */}
-      <div className="relative md:translate-y-[500px]">
-        <SliderLg
-          slides={[
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-          ]}
-        />
-        <SliderSm
-          slides={[
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-            {
-              name: "p1",
-              desc: "d1",
-              tech: "t1",
-              img: "/manwa.png",
-            },
-          ]}
-        />
+      <div className="relative translate-y-[100px] md:translate-y-[500px]">
+        <SliderLg modalOpen={modalOpen} />
+        <SliderSm modalOpen={modalOpen} />
       </div>
-
       {/* contact */}
-      <div className="relative translate-y-[100px] md:translate-y-[750px]">
+      <div className="relative translate-y-[200px] md:translate-y-[750px]">
         <div className="social-buttons">
           <motion.a
             initial={{ opacity: 0, y: 50 }}

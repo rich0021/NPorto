@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import "../assets/css/circleBg.css";
 
