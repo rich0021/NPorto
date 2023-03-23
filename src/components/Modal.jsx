@@ -14,23 +14,25 @@ function Modal(prop) {
           role="dialog"
           aria-modal="true"
         >
-          <motion.div className="fixed inset-0 z-10 overflow-hidden">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.25 }}
-              exit={{ opacity: 0 }}
-              className="w-screen h-screen bg-black absolute"
-            ></motion.div>
-            <motion.div
-              key="modal"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0, opacity: 0 }}
-              transition={{ ease: "circOut" }}
-              className="z-5 flex h-screen items-center justify-center p-4 text-center sm:items-center sm:p-0 font-nunito font-semibold"
-            >
-              <div className="transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full md:w-[70%] lg:w-[60%]">
-                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <motion.div
+            key="modal"
+            className="fixed inset-0 z-10 overflow-y-auto overflow-x-hidden"
+          >
+            <motion.div className="z-5 p-8 flex relative min-h-screen items-center justify-center text-center sm:items-center sm:p-0 font-nunito font-semibold">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.25 }}
+                exit={{ opacity: 0 }}
+                className="w-full h-full bg-black absolute"
+              ></motion.div>
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+                transition={{ ease: "circOut" }}
+                className="relative z-999 transform text-left shadow-xl my-8 w-full sm:w-[80%] md:w-[55%] lg:w-[60%]"
+              >
+                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 rounded-t-lg">
                   <h4>{prop.modalInfo?.name}</h4>
                   <hr className="mt-2" />
                   <div className="mt-4">
@@ -73,7 +75,7 @@ function Modal(prop) {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 rounded-b-lg">
                   <button
                     onClick={prop.close}
                     type="button"
@@ -82,7 +84,7 @@ function Modal(prop) {
                     Close
                   </button>
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
