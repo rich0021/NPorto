@@ -5,11 +5,16 @@
     "tech": "Nuxt, Laravel, Tailwind, Mysql",
     "img": "/cover/manwa.png",
     "imgDetail": [
-      { "img": "/cover/manwa.png", "name": "manwa1" },
-      { "img": "/cover/manwa.png", "name": "manwa2" },
-      { "img": "/cover/manwa.png", "name": "manwa3" },
-      { "img": "/cover/manwa.png", "name": "manwa4" },
-      { "img": "/cover/manwa.png", "name": "manwa5" }
+      { "img": "/project-img/manwa/manwa1.PNG", "name": "manwa1" },
+      { "img": "/project-img/manwa/manwa2.PNG", "name": "manwa2" },
+      { "img": "/project-img/manwa/manwa9.PNG", "name": "manwa3" },
+      { "img": "/project-img/manwa/manwa3.PNG", "name": "manwa4" },
+      { "img": "/project-img/manwa/manwa4.PNG", "name": "manwa5" },
+      { "img": "/project-img/manwa/manwa5.PNG", "name": "manwa6" },
+      { "img": "/project-img/manwa/manwa6.PNG", "name": "manwa7" },
+      { "img": "/project-img/manwa/manwa7.PNG", "name": "manwa8" },
+      { "img": "/project-img/manwa/manwa8.PNG", "name": "manwa9" },
+      { "img": "/project-img/manwa/manwa10.png", "name": "manwa10" }
     ],
     "link": "manwa.smkn11bdg.sch.id"
   },
