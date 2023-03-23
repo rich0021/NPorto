@@ -10,16 +10,16 @@ function Modal(prop) {
       {prop.modalInfo.isOpen && (
         <div
           className="relative z-999 text-[#1d1d1f] font-nunito font-semibold"
-          aria-labelledby="modal-title"
+          aria-labelledby="Project Detail"
           role="dialog"
           aria-modal="true"
         >
-          <motion.div className="fixed inset-0 z-10 overflow-y-auto">
+          <motion.div className="fixed inset-0 z-10 overflow-hidden">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.25 }}
               exit={{ opacity: 0 }}
-              className="w-full h-full bg-black absolute"
+              className="w-screen h-screen bg-black absolute"
             ></motion.div>
             <motion.div
               key="modal"
@@ -27,9 +27,9 @@ function Modal(prop) {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
               transition={{ ease: "circOut" }}
-              className="z-5 flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0 font-nunito font-semibold"
+              className="z-5 flex h-screen items-center justify-center p-4 text-center sm:items-center sm:p-0 font-nunito font-semibold"
             >
-              <div className="transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
+              <div className="transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full md:w-[70%] lg:w-[60%]">
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <h4>{prop.modalInfo?.name}</h4>
                   <hr className="mt-2" />

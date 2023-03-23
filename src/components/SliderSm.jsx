@@ -18,13 +18,13 @@ function SliderLg(prop) {
   return (
     <Swiper
       modules={[Autoplay]}
-      className="flex justify-center xl:hidden"
+      className="flex justify-center xl:hidden w-[95%] sm:w-[70%] md:w-[90%]"
       slidesPerView={1}
       spaceBetween={20}
       autoplay={true}
       delay={3000}
       breakpoints={{
-        976: {
+        768: {
           slidesPerView: 2,
         },
       }}
@@ -34,7 +34,7 @@ function SliderLg(prop) {
           <SwiperSlide key={index}>
             <motion.div
               onClick={() => prop.modalOpen(item)}
-              className="aspect-square w-full bg-white rounded-lg overflow-hidden"
+              className="aspect-square w-full max-h-[400px] bg-white rounded-lg overflow-hidden"
             >
               <img
                 src={item.img}
