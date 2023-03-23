@@ -31,11 +31,11 @@ function SliderLg(prop) {
             <SwiperSlide key={index}>
               <motion.div
                 onClick={() => prop.modalOpen(item)}
-                className="h-[400px] w-[450px] bg-yellow-500 rounded-lg overflow-hidden cursor-pointer"
+                className="h-[400px] w-[450px] bg-white rounded-lg overflow-hidden cursor-pointer"
               >
                 <img
                   src={item.img}
-                  className="w-full h-full object-fill"
+                  className="w-full h-full object-contain"
                   alt={`${item.name} image`}
                 />
               </motion.div>

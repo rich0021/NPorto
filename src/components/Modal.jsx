@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 import "swiper/css";
 
 function Modal(prop) {
@@ -26,24 +27,31 @@ function Modal(prop) {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
               transition={{ ease: "circOut" }}
-              className="z-5 flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 font-nunito font-semibold"
+              className="z-5 flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0 font-nunito font-semibold"
             >
-              <div className="transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl">
+              <div className="transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <h4>{prop.modalInfo?.name}</h4>
                   <hr className="mt-2" />
-                  <div className="sm:flex sm:items-start mt-4">
-                    <div className="bg-blue-500">
-                      <Swiper slidesPerView={3} spaceBetwegit en={50}>
+                  <div className="mt-4">
+                    <div className="mb-6">
+                      <Swiper
+                        modules={[Autoplay]}
+                        autoplay={true}
+                        delay={2000}
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        breakpoints={{ 1024: { slidesPerView: 2 } }}
+                      >
                         {prop.modalInfo.imgDetail &&
                           prop.modalInfo.imgDetail.length > 0 &&
                           prop.modalInfo.imgDetail.map((item, index) => {
                             return (
                               <SwiperSlide key={index}>
-                                <motion.div className="h-[100px] w-[100px] bg-yellow-500 rounded-lg">
+                                <motion.div className="aspect-video w-full rounded-lg">
                                   <img
                                     src={item.img}
-                                    className="w-full h-full object-fill"
+                                    className="w-full h-full object-contain"
                                     alt={`${item.name} image`}
                                   />
                                 </motion.div>
@@ -52,9 +60,16 @@ function Modal(prop) {
                           })}
                       </Swiper>
                     </div>
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left bg-green-400">
+                    <div className="text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <p>{prop.modalInfo?.desc}</p>
-                      <p className="mt-6">{prop.modalInfo?.tech}</p>
+                      <p className="my-6">{prop.modalInfo?.tech}</p>
+                      <a
+                        className="text-blue-500"
+                        target={"_blank"}
+                        href={prop.modalInfo?.link}
+                      >
+                        {prop.modalInfo?.link}
+                      </a>
                     </div>
                   </div>
                 </div>

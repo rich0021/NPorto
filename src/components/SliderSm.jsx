@@ -31,11 +31,14 @@ function SliderLg(prop) {
     >
       {info.map((item, index) => {
         return (
-          <SwiperSlide key={index} onClick={prop.modalOpen}>
-            <motion.div className="aspect-square w-full bg-yellow-500 rounded-lg overflow-hidden">
+          <SwiperSlide key={index}>
+            <motion.div
+              onClick={() => prop.modalOpen(item)}
+              className="aspect-square w-full bg-white rounded-lg overflow-hidden"
+            >
               <img
                 src={item.img}
-                className="w-full h-full object-fill"
+                className="w-full h-full object-contain"
                 alt={`${item.name} image`}
               />
             </motion.div>

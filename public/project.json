@@ -3,28 +3,37 @@
     "name": "Manwa",
     "desc": "Aplikasi untuk membantu kesiswaan mengelola data absensi dan kedisiplinan",
     "tech": "Nuxt, Laravel, Tailwind, Mysql",
-    "img": "/manwa.png",
+    "img": "/cover/manwa.png",
     "imgDetail": [
-      { "img": "/manwa.png", "name": "manwa1" },
-      { "img": "/manwa.png", "name": "manwa2" },
-      { "img": "/manwa.png", "name": "manwa3" },
-      { "img": "/manwa.png", "name": "manwa4" },
-      { "img": "/manwa.png", "name": "manwa5" }
+      { "img": "/cover/manwa.png", "name": "manwa1" },
+      { "img": "/cover/manwa.png", "name": "manwa2" },
+      { "img": "/cover/manwa.png", "name": "manwa3" },
+      { "img": "/cover/manwa.png", "name": "manwa4" },
+      { "img": "/cover/manwa.png", "name": "manwa5" }
     ],
-    "link": ""
+    "link": "manwa.smkn11bdg.sch.id"
   },
 
   {
-    "name": "Kelontong.Id",
+    "name": "Kelontong.ID",
     "desc": "Studi kasus PKL, Market place sederhana untuk menjual produk produk toko kelontong",
-    "tech": "Laravel, Mysql",
-    "img": "/kelontong.png",
+    "tech": "Laravel, Bootstrap, Mysql",
+    "img": "/cover/kelontong.png",
     "imgDetail": [
-      { "img": "/kelontong.png", "name": "manwa1" },
-      { "img": "/kelontong.png", "name": "manwa2" },
-      { "img": "/kelontong.png", "name": "manwa3" },
-      { "img": "/kelontong.png", "name": "manwa4" },
-      { "img": "/kelontong.png", "name": "manwa5" }
+      { "img": "/project-img/kelontong/kelontong3.PNG", "name": "kelontong1" },
+      { "img": "/project-img/kelontong/kelontong1.PNG", "name": "kelontong2" },
+      { "img": "/project-img/kelontong/kelontong2.PNG", "name": "kelontong3" },
+      { "img": "/project-img/kelontong/kelontong6.PNG", "name": "kelontong4" },
+      { "img": "/project-img/kelontong/kelontong11.PNG", "name": "kelontong5" },
+      { "img": "/project-img/kelontong/kelontong8.PNG", "name": "kelontong6" },
+      { "img": "/project-img/kelontong/kelontong4.PNG", "name": "kelontong7" },
+      { "img": "/project-img/kelontong/kelontong5.PNG", "name": "kelontong8" },
+      { "img": "/project-img/kelontong/kelontong9.PNG", "name": "kelontong9" },
+      {
+        "img": "/project-img/kelontong/kelontong10.PNG",
+        "name": "kelontong10"
+      },
+      { "img": "/project-img/kelontong/kelontong7.PNG", "name": "kelontong11" }
     ],
     "link": ""
   }
