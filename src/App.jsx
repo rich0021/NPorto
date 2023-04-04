@@ -217,7 +217,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.1 }}
             viewport={{ once: true }}
-            href="https://www.linkedin.com/in/naufal-muttaqin/"
+            href="https://www.linkedin.com/in/muhammad-naufal-muttaqin/"
             className="social-button social-button--linkedin"
             aria-label="LinkedIn"
             target="_blank"
