@@ -1,7 +1,7 @@
 [
   {
     "name": "Manwa",
-    "desc": "Aplikasi untuk membantu kesiswaan mengelola data absensi dan kedisiplinan",
+    "desc": "App that help student affairs staff for managing attendance and discipline data, Including feature for student to taking photos to make attandance",
     "tech": "Nuxt, Laravel, Tailwind, Mysql",
     "img": "/cover/manwa.png",
     "imgDetail": [
@@ -14,15 +14,15 @@
       { "img": "/project-img/manwa/manwa6.PNG", "name": "manwa7" },
       { "img": "/project-img/manwa/manwa7.PNG", "name": "manwa8" },
       { "img": "/project-img/manwa/manwa8.PNG", "name": "manwa9" },
-      { "img": "/project-img/manwa/manwa10.png", "name": "manwa10" }
+      { "img": "/project-img/manwa/manwa10.PNG", "name": "manwa10" }
     ],
     "link": "manwa.smkn11bdg.sch.id"
   },
 
   {
     "name": "Kelontong.ID",
-    "desc": "Studi kasus PKL, Market place sederhana untuk menjual produk produk toko kelontong",
-    "tech": "Laravel, Bootstrap, Mysql",
+    "desc": "Internship study case creating simple marketplace app for selling grocery product",
+    "tech": "Laravel, Livewire, jQuery, Bootstrap, Mysql",
     "img": "/cover/kelontong.png",
     "imgDetail": [
       { "img": "/project-img/kelontong/kelontong3.PNG", "name": "kelontong1" },
@@ -39,6 +39,36 @@
         "name": "kelontong10"
       },
       { "img": "/project-img/kelontong/kelontong7.PNG", "name": "kelontong11" }
+    ],
+    "link": ""
+  },
+
+  {
+    "name": "Web 11",
+    "desc": "Web profile for SMKN 11 Bandung",
+    "tech": "Laravel, Bootstrap, Mysql",
+    "img": "/cover/web11.png",
+    "imgDetail": [
+      { "img": "/project-img/web11/web-11-1.PNG", "name": "web11-1" },
+      { "img": "/project-img/web11/web-11-2.PNG", "name": "web11-2" },
+      { "img": "/project-img/web11/web-11-3.PNG", "name": "web31-3" },
+      { "img": "/project-img/web11/web-11-4.PNG", "name": "web11-4" },
+      { "img": "/project-img/web11/web-11-5.PNG", "name": "web11-5" },
+      { "img": "/project-img/web11/web-11-6.PNG", "name": "web11-6" },
+      { "img": "/project-img/web11/web-11-7.PNG", "name": "web11-7" },
+      { "img": "/project-img/web11/web-11-8.PNG", "name": "web11-8" },
+      { "img": "/project-img/web11/web-11-11.PNG", "name": "web11-10" },
+      { "img": "/project-img/web11/web-11-12.PNG", "name": "web11-11" },
+      { "img": "/project-img/web11/web-11-10.PNG", "name": "web11-12" },
+      { "img": "/project-img/web11/web-11-20.PNG", "name": "web11-13" },
+      { "img": "/project-img/web11/web-11-21.PNG", "name": "web11-14" },
+      { "img": "/project-img/web11/web-11-13.PNG", "name": "web11-15" },
+      { "img": "/project-img/web11/web-11-14.PNG", "name": "web11-16" },
+      { "img": "/project-img/web11/web-11-15.PNG", "name": "web11-17" },
+      { "img": "/project-img/web11/web-11-16.PNG", "name": "web11-18" },
+      { "img": "/project-img/web11/web-11-17.PNG", "name": "web11-19" },
+      { "img": "/project-img/web11/web-11-18.PNG", "name": "web11-20" },
+      { "img": "/project-img/web11/web-11-19.PNG", "name": "web11-21" }
     ],
     "link": ""
   }

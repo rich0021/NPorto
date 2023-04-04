@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <div className="h-[2300px] md:h-[2800px]">
+    <div className="h-[2200px] md:h-[2800px]">
       <Circle />
       <Modal modalInfo={modalInfo} close={modalClose} />
       {/* hi text */}
@@ -177,7 +177,7 @@ function App() {
         {/* right content */}
         <div className="w-[50%] flex justify-end">
           <div className=" flex flex-col items-end translate-y-[750px] md:translate-y-[1000px] text-right h-max">
-            <p className="font-bold font-nunito w-[90.5%] lg:w-[60%] text-sm sm:text-xl md:text-2xl lg:text-3xl">
+            <p className="font-bold font-nunito w-[85%] lg:w-[60%] text-sm sm:text-xl md:text-2xl lg:text-3xl">
               i’m a student who trying to be a
               <span className="text-[#cbaddf]"> fullstack</span> developer
             </p>
