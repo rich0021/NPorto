@@ -10,11 +10,12 @@ import {
 import "./assets/css/dots.css";
 import "./assets/css/icon.css";
 import Modal from "./components/Modal.jsx";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 function App() {
   const { scrollYProgress } = useScroll();
   const [modalInfo, setModalInfo] = useState({ isOpen: false });
+  const root = useRef();
   const transformY = useTransform(scrollYProgress, [0, 1], [0, 1950]);
   const underlineControl = useAnimationControls();
   const spanV = {
@@ -33,17 +34,19 @@ function App() {
   };
 
   const modalOpen = (data) => {
+    document.body.style.overflowY = "hidden";
     setModalInfo({ ...data, isOpen: true });
   };
 
   const modalClose = () => {
+    document.body.style.overflowY = "initial";
     setModalInfo((old) => {
       return { ...old, isOpen: false };
     });
   };
 
   return (
-    <div className="h-[2200px] md:h-[2800px]">
+    <div ref={root} className="h-[2200px] md:h-[2800px]">
       <Circle />
       <Modal modalInfo={modalInfo} close={modalClose} />
       {/* hi text */}
