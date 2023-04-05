@@ -41,9 +41,11 @@ function Modal(prop) {
                         modules={[Autoplay]}
                         autoplay={true}
                         delay={2000}
-                        slidesPerView={1}
+                        slidesPerView={prop.modalInfo.slideSM}
                         spaceBetween={30}
-                        breakpoints={{ 1024: { slidesPerView: 2 } }}
+                        breakpoints={{
+                          1024: { slidesPerView: prop.modalInfo.slideLG },
+                        }}
                       >
                         {prop.modalInfo.imgDetail &&
                           prop.modalInfo.imgDetail.length > 0 &&
