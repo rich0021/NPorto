@@ -232,7 +232,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
-            href="https://wa.me/0895384412365"
+            href="https://wa.me/085179563992"
             className="social-button social-button--whatsapp"
             aria-label="Whatsapp"
             target="_blank"
