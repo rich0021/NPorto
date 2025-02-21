@@ -230,18 +230,6 @@ function App() {
           <motion.a
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ...transition, duration: 0.7, delay: 0.2 }}
-            viewport={{ once: true }}
-            href="https://wa.me/085179563992"
-            className="social-button social-button--whatsapp"
-            aria-label="Whatsapp"
-            target="_blank"
-          >
-            <i className="fab fa-whatsapp"></i>
-          </motion.a>
-          <motion.a
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ ...transition, duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
             href="https://github.com/rich0021"
