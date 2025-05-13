@@ -1,96 +1,194 @@
 [
-  {
-    "name": "Manwa",
-    "desc": "App that help student affairs staff for managing attendance and discipline data, Including feature for student to taking photos to make attandance",
-    "tech": "Nuxt, Laravel, Tailwind, Mysql",
-    "img": "/cover/manwa.png",
-    "slideLG": "2",
-    "slideSM": "1",
-    "imgDetail": [
-      { "img": "/project-img/manwa/manwa1.PNG", "name": "manwa1" },
-      { "img": "/project-img/manwa/manwa2.PNG", "name": "manwa2" },
-      { "img": "/project-img/manwa/manwa9.PNG", "name": "manwa3" },
-      { "img": "/project-img/manwa/manwa3.PNG", "name": "manwa4" },
-      { "img": "/project-img/manwa/manwa4.PNG", "name": "manwa5" },
-      { "img": "/project-img/manwa/manwa5.PNG", "name": "manwa6" },
-      { "img": "/project-img/manwa/manwa6.PNG", "name": "manwa7" },
-      { "img": "/project-img/manwa/manwa7.PNG", "name": "manwa8" },
-      { "img": "/project-img/manwa/manwa8.PNG", "name": "manwa9" },
-      { "img": "/project-img/manwa/manwa10.PNG", "name": "manwa10" }
-    ],
-    "link": "manwa.smkn11bdg.sch.id"
-  },
+    {
+      "name": "Spectra Web",
+      "desc": "Spectra Web App and Profile Website",
+      "tech": "Laravel, Jquery, Bootstrap, Tailwind, Alpine JS",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/spectra-web.png",
+      "imgDetail": [
+        { "img": "/project-img/spectraweb/sp1.png", "name": "sp1" },
+        { "img": "/project-img/spectraweb/sp2.png", "name": "sp2" },
+        { "img": "/project-img/spectraweb/sp3.png", "name": "sp3" },
+        { "img": "/project-img/spectraweb/sp4.png", "name": "sp4" },
+        { "img": "/project-img/spectraweb/sp5.png", "name": "sp5" },
+        { "img": "/project-img/spectraweb/sp6.png", "name": "sp6" },
+        { "img": "/project-img/spectraweb/sp7.png", "name": "sp7" },
+        { "img": "/project-img/spectraweb/sp8.png", "name": "sp8" }
+      ],
+      "link": "https://spectra.id"
+    },
 
-  {
-    "name": "Kelontong.ID",
-    "desc": "Internship study case creating simple marketplace app for selling grocery product",
-    "tech": "Laravel, Livewire, jQuery, Bootstrap, Mysql",
-    "slideLG": "2",
-    "slideSM": "1",
-    "img": "/cover/kelontong.png",
-    "slidesLG": "2",
-    "slidesSM": "1",
-    "imgDetail": [
-      { "img": "/project-img/kelontong/kelontong3.PNG", "name": "kelontong1" },
-      { "img": "/project-img/kelontong/kelontong1.PNG", "name": "kelontong2" },
-      { "img": "/project-img/kelontong/kelontong2.PNG", "name": "kelontong3" },
-      { "img": "/project-img/kelontong/kelontong6.PNG", "name": "kelontong4" },
-      { "img": "/project-img/kelontong/kelontong11.PNG", "name": "kelontong5" },
-      { "img": "/project-img/kelontong/kelontong8.PNG", "name": "kelontong6" },
-      { "img": "/project-img/kelontong/kelontong4.PNG", "name": "kelontong7" },
-      { "img": "/project-img/kelontong/kelontong5.PNG", "name": "kelontong8" },
-      { "img": "/project-img/kelontong/kelontong9.PNG", "name": "kelontong9" },
-      {
-        "img": "/project-img/kelontong/kelontong10.PNG",
-        "name": "kelontong10"
-      },
-      { "img": "/project-img/kelontong/kelontong7.PNG", "name": "kelontong11" }
-    ],
-    "link": ""
-  },
+    {
+      "name": "Spectra Mobile",
+      "desc": "All Spectra App Mobile Client.",
+      "tech": "Flutter, Laravel, Mysql",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/spectra-mobile.png",
+      "imgDetail": [
+        { "img": "/project-img/spectramobile/spectramobile1.png", "name": "spectramobile1" },
+        { "img": "/project-img/spectramobile/spectramobile2.png", "name": "spectramobile2" },
+        { "img": "/project-img/spectramobile/spectramobile3.png", "name": "spectramobile3" },
+        { "img": "/project-img/spectramobile/spectramobile4.png", "name": "spectramobile4" },
+        { "img": "/project-img/spectramobile/spectramobile5.png", "name": "spectramobile5" }
+      ]
+    },
 
-  {
-    "name": "Web 11",
-    "desc": "Web profile for SMKN 11 Bandung",
-    "tech": "Laravel, Bootstrap, Mysql",
-    "img": "/cover/web11.png",
-    "slideLG": "2",
-    "slideSM": "1",
-    "imgDetail": [
-      { "img": "/project-img/web11/web-11-1.PNG", "name": "web11-1" },
-      { "img": "/project-img/web11/web-11-2.PNG", "name": "web11-2" },
-      { "img": "/project-img/web11/web-11-3.PNG", "name": "web31-3" },
-      { "img": "/project-img/web11/web-11-4.PNG", "name": "web11-4" },
-      { "img": "/project-img/web11/web-11-5.PNG", "name": "web11-5" },
-      { "img": "/project-img/web11/web-11-6.PNG", "name": "web11-6" },
-      { "img": "/project-img/web11/web-11-7.PNG", "name": "web11-7" },
-      { "img": "/project-img/web11/web-11-8.PNG", "name": "web11-8" },
-      { "img": "/project-img/web11/web-11-11.PNG", "name": "web11-10" },
-      { "img": "/project-img/web11/web-11-12.PNG", "name": "web11-11" },
-      { "img": "/project-img/web11/web-11-10.PNG", "name": "web11-12" },
-      { "img": "/project-img/web11/web-11-20.PNG", "name": "web11-13" },
-      { "img": "/project-img/web11/web-11-21.PNG", "name": "web11-14" },
-      { "img": "/project-img/web11/web-11-13.PNG", "name": "web11-15" },
-      { "img": "/project-img/web11/web-11-14.PNG", "name": "web11-16" },
-      { "img": "/project-img/web11/web-11-15.PNG", "name": "web11-17" },
-      { "img": "/project-img/web11/web-11-16.PNG", "name": "web11-18" },
-      { "img": "/project-img/web11/web-11-17.PNG", "name": "web11-19" },
-      { "img": "/project-img/web11/web-11-18.PNG", "name": "web11-20" },
-      { "img": "/project-img/web11/web-11-19.PNG", "name": "web11-21" }
-    ],
-    "link": ""
-  },
+    {
+      "name": "E-ledger",
+      "desc": "General Ledger App, With Worksheet and Financial Reporting",
+      "tech": "Vue, Vuetify, Laravel",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/eledger.png",
+      "imgDetail": [
+        { "img": "/project-img/el/el1.jpeg", "name": "el1" },
+        { "img": "/project-img/el/el2.jpeg", "name": "el2" },
+        { "img": "/project-img/el/el3.jpeg", "name": "el3" },
+        { "img": "/project-img/el/el4.jpeg", "name": "el4" }
+      ]
+    },
 
-  {
-    "name": "NScaff",
-    "desc": "Simple Mvc Boilerplate Using Bramus Router, Illuminate Database ORM, and Twig.",
-    "tech": "PHP",
-    "slideLG": "1",
-    "slideSM": "1",
-    "img": "/cover/nscaff.png",
-    "imgDetail": [
-      { "img": "/project-img/nscaff/nscaff1.png", "name": "nscaff1" }
-    ],
-    "link": "https://github.com/rich0021/NScaff"
-  }
+    {
+      "name": "Disco Frog Studio",
+      "desc": "Disco Frog Studio Profile Website",
+      "tech": "Next, Tailwind, Laravel, Mysql",
+      "img": "/cover/disco-frog.png",
+      "slideLG": "2",
+      "slideSM": "1",
+      "imgDetail": [
+        { "img": "/project-img/dfs/dfs1.png", "name": "dfs1" },
+        { "img": "/project-img/dfs/dfs2.png", "name": "dfs2" },
+        { "img": "/project-img/dfs/dfs3.png", "name": "dfs3" },
+        { "img": "/project-img/dfs/dfs4.png", "name": "dfs4" },
+        { "img": "/project-img/dfs/dfs5.png", "name": "dfs5" },
+        { "img": "/project-img/dfs/dfs6.png", "name": "dfs6" },
+        { "img": "/project-img/dfs/dfs7.png", "name": "dfs7" },
+        { "img": "/project-img/dfs/dfs8.png", "name": "dfs8" }
+      ],
+      "link": "https://discofrogstudio.com"
+    },
+
+    {
+      "name": "Lestari Osean Indonesia",
+      "desc": "Lestari Osean Indonesia Profile Website",
+      "tech": "Next, Tailwind, Laravel, Mysql",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/loi-shipyard.png",
+      "imgDetail": [
+        { "img": "/project-img/loi/loi1.png", "name": "loi1" },
+        { "img": "/project-img/loi/loi2.png", "name": "loi2" },
+        { "img": "/project-img/loi/loi3.png", "name": "loi3" },
+        { "img": "/project-img/loi/loi4.png", "name": "loi4" },
+        { "img": "/project-img/loi/loi5.png", "name": "loi5" },
+        { "img": "/project-img/loi/loi6.png", "name": "loi6" },
+        { "img": "/project-img/loi/loi7.png", "name": "loi7" },
+        { "img": "/project-img/loi/loi8.png", "name": "loi8" }
+      ],
+      "link": "https://loishipyard.com"
+    },
+
+    {
+      "name": "Bintang Manunggal Pratama",
+      "desc": "Bintang Manunggal Pratama Profile Website",
+      "tech": "Next, Tailwind, Laravel, Mysql",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/bmp.png",
+      "imgDetail": [
+        { "img": "/project-img/gp/gp1.png", "name": "gp1" },
+        { "img": "/project-img/gp/gp2.png", "name": "gp2" },
+        { "img": "/project-img/gp/gp3.png", "name": "gp3" },
+        { "img": "/project-img/gp/gp4.png", "name": "gp4" },
+        { "img": "/project-img/gp/gp5.png", "name": "gp5" },
+        { "img": "/project-img/gp/gp6.png", "name": "gp6" },
+        { "img": "/project-img/gp/gp7.png", "name": "gp7" },
+        { "img": "/project-img/gp/gp8.png", "name": "gp8" }
+      ],
+      "link": "https://groupbintang.com"
+    },
+
+    {
+      "name": "Manwa",
+      "desc": "App that help student affairs staff for managing attendance and discipline data, Including feature for student to taking photos to make attandance",
+      "tech": "Nuxt, Laravel, Tailwind, Mysql",
+      "img": "/cover/manwa.png",
+      "slideLG": "2",
+      "slideSM": "1",
+      "imgDetail": [
+        { "img": "/project-img/manwa/manwa1.PNG", "name": "manwa1" },
+        { "img": "/project-img/manwa/manwa2.PNG", "name": "manwa2" },
+        { "img": "/project-img/manwa/manwa9.PNG", "name": "manwa3" },
+        { "img": "/project-img/manwa/manwa3.PNG", "name": "manwa4" },
+        { "img": "/project-img/manwa/manwa4.PNG", "name": "manwa5" },
+        { "img": "/project-img/manwa/manwa5.PNG", "name": "manwa6" },
+        { "img": "/project-img/manwa/manwa6.PNG", "name": "manwa7" },
+        { "img": "/project-img/manwa/manwa7.PNG", "name": "manwa8" },
+        { "img": "/project-img/manwa/manwa8.PNG", "name": "manwa9" },
+        { "img": "/project-img/manwa/manwa10.PNG", "name": "manwa10" }
+      ],
+      "link": "manwa.smkn11bdg.sch.id"
+    },
+  
+    {
+      "name": "Kelontong.ID",
+      "desc": "Internship study case creating simple marketplace app for selling grocery product",
+      "tech": "Laravel, Livewire, jQuery, Bootstrap, Mysql",
+      "slideLG": "2",
+      "slideSM": "1",
+      "img": "/cover/kelontong.png",
+      "slidesLG": "2",
+      "slidesSM": "1",
+      "imgDetail": [
+        { "img": "/project-img/kelontong/kelontong3.PNG", "name": "kelontong1" },
+        { "img": "/project-img/kelontong/kelontong1.PNG", "name": "kelontong2" },
+        { "img": "/project-img/kelontong/kelontong2.PNG", "name": "kelontong3" },
+        { "img": "/project-img/kelontong/kelontong6.PNG", "name": "kelontong4" },
+        { "img": "/project-img/kelontong/kelontong11.PNG", "name": "kelontong5" },
+        { "img": "/project-img/kelontong/kelontong8.PNG", "name": "kelontong6" },
+        { "img": "/project-img/kelontong/kelontong4.PNG", "name": "kelontong7" },
+        { "img": "/project-img/kelontong/kelontong5.PNG", "name": "kelontong8" },
+        { "img": "/project-img/kelontong/kelontong9.PNG", "name": "kelontong9" },
+        {
+          "img": "/project-img/kelontong/kelontong10.PNG",
+          "name": "kelontong10"
+        },
+        { "img": "/project-img/kelontong/kelontong7.PNG", "name": "kelontong11" }
+      ],
+      "link": ""
+    },
+  
+    {
+      "name": "Web 11",
+      "desc": "Web profile for SMKN 11 Bandung",
+      "tech": "Laravel, Bootstrap, Mysql",
+      "img": "/cover/web11.png",
+      "slideLG": "2",
+      "slideSM": "1",
+      "imgDetail": [
+        { "img": "/project-img/web11/web-11-1.PNG", "name": "web11-1" },
+        { "img": "/project-img/web11/web-11-2.PNG", "name": "web11-2" },
+        { "img": "/project-img/web11/web-11-3.PNG", "name": "web31-3" },
+        { "img": "/project-img/web11/web-11-4.PNG", "name": "web11-4" },
+        { "img": "/project-img/web11/web-11-5.PNG", "name": "web11-5" },
+        { "img": "/project-img/web11/web-11-6.PNG", "name": "web11-6" },
+        { "img": "/project-img/web11/web-11-7.PNG", "name": "web11-7" },
+        { "img": "/project-img/web11/web-11-8.PNG", "name": "web11-8" },
+        { "img": "/project-img/web11/web-11-11.PNG", "name": "web11-10" },
+        { "img": "/project-img/web11/web-11-12.PNG", "name": "web11-11" },
+        { "img": "/project-img/web11/web-11-10.PNG", "name": "web11-12" },
+        { "img": "/project-img/web11/web-11-20.PNG", "name": "web11-13" },
+        { "img": "/project-img/web11/web-11-21.PNG", "name": "web11-14" },
+        { "img": "/project-img/web11/web-11-13.PNG", "name": "web11-15" },
+        { "img": "/project-img/web11/web-11-14.PNG", "name": "web11-16" },
+        { "img": "/project-img/web11/web-11-15.PNG", "name": "web11-17" },
+        { "img": "/project-img/web11/web-11-16.PNG", "name": "web11-18" },
+        { "img": "/project-img/web11/web-11-17.PNG", "name": "web11-19" },
+        { "img": "/project-img/web11/web-11-18.PNG", "name": "web11-20" },
+        { "img": "/project-img/web11/web-11-19.PNG", "name": "web11-21" }
+      ],
+      "link": ""
+    }
 ]
